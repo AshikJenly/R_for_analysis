@@ -1,5 +1,8 @@
 library(ggplot2)
 
+head(precip)
+precipitation <- rnorm(100000,mean=38)
+stats <- numeric(10000)
 
 statistic <- function(s,p)
 {
@@ -8,8 +11,6 @@ statistic <- function(s,p)
   return(n_m/d_m)
 }
 
-precipitation <- rnorm(100000,mean=38)
-stats <- numeric(10000)
 
 for(i in 1:10000)
 {
