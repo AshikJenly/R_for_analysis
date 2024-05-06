@@ -22,4 +22,4 @@ bayes.fitpredict <- function(male_train,female_train,test_data)
       print("The given Height of Person is Female")
 }
 
-bayes.fitpredict(male,female,140)
+bayes.fitpredict(male,female,150)
