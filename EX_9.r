@@ -4,7 +4,7 @@ female<-c(140,145,149,152,157,135,139,160,155,163)
 getpdf <- function(d,data,test){
   
   pdf <- dnorm(d,mean(data),sqrt(var(data)))
-  pt <- dnorm(test,mean(d),sqrt(var(d)))
+  pt <- dnorm(test,mean(data),sqrt(var(data)))
   return(list(d = d,pdf = pdf,pt = pt))
 }
 bayes.fitpredict <- function(male_train,female_train,test_data)
